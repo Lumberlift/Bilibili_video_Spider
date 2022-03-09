@@ -1,4 +1,4 @@
-# Bilibili_video_Spider
+# Bilibili_video_Reptile
 这是一个只能爬取一个视频中弹幕的工程...
 这个项目中我拿了b站罗翔老师一个视频作为样例
 在BV_num.txt文档中输入一个BV号（应该就是bilibili那个唯一的id号）
