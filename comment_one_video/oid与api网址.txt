@@ -1,0 +1,13 @@
+罗翔老师视频为例
+罗翔老师的视频root不可以用花括号进行索引
+"aid":497651138,"bvid":"BV1BK411L7DJ"
+oid同aid：497651138
+https://api.bilibili.com/x/v2/reply/reply?...
+callback=jQuery17206965098205035392_1649214199120&jsonp=jsonp...%%这一行是错误
+&pn=1&type=1&oid=497651138&ps=10&root=2714653966&_=1649214961536
+
+https://api.bilibili.com/x/v2/reply/reply?&pn=1&type=1&oid=497651138&ps=10&root=2714653966&_=1649214961536
+
+更新：每一个评论都有对应的root，先从https://api.bilibili.com/x/v2/reply?pn=1&type=1&oid=（）&sort=2中匹配root
+获取不同的root
+再从https://api.bilibili.com/x/v2/reply?pn=1&type=1&oid=（）&sort=2&root=（）中获取评论的回复
