@@ -30,7 +30,7 @@ tic
  content={};
  for k=1:size(root_cell,2)%每一个评论
      page_num=get_page_num(root_cell{1,k});
- for j=224:(page_num)%每一个评论的翻页
+ for j=1:(page_num)%每一个评论的翻页
  url=char({['https://api.bilibili.com/x/v2/reply/reply?&pn=',char(num2str(j)),'&type=1&oid=',char(oid),'&sort=2&root=',char(num2str(root_cell{1,k}))]});
  webdata=webread(url);%获取网页信息
     %利用正则匹配获得评论的回复信息
